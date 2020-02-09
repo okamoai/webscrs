@@ -1,0 +1,64 @@
+{
+  "name": "webscrs",
+  "version": "0.0.1",
+  "author": "okamoai <okamoai@rano-raraku.net>",
+  "bin": {
+    "webscrs": "./bin/run"
+  },
+  "bugs": "https://github.com/okamoai/webscrs/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.19",
+    "@oclif/config": "^1.14.0",
+    "@oclif/plugin-help": "^2.2.3",
+    "chalk": "^3.0.0",
+    "ora": "^4.0.3",
+    "pixelmatch": "^5.1.0",
+    "pngjs": "^3.4.0",
+    "puppeteer": "^2.0.0",
+    "sharp": "^0.24.0",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@types/node": "^10.17.14",
+    "@types/pixelmatch": "^5.0.0",
+    "@types/pngjs": "^3.4.0",
+    "@types/puppeteer": "^2.0.0",
+    "@types/sharp": "^0.24.0",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "eslint-config-oclif-typescript": "^0.1.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "engines": {
+    "node": ">=10.12.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/okamoai/webscrs",
+  "description": "A CLI for website screenshots and comparisons",
+  "keywords": [
+    "oclif",
+    "pixelmatch",
+    "puppeteer",
+    "screenshot",
+    "diff"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "webscrs"
+  },
+  "repository": "https://github.com/okamoai/webscrs.git",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rimraf lib && tsc -b && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
