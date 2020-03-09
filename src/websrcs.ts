@@ -125,7 +125,7 @@ const fitDimension = async (originBufA: Buffer | undefined, originBufB: Buffer |
 export const websrcs = async (urls: string[] = [], options: WebscrsOption) => {
   if (invalidUrl(urls[0]) && await fs.access(urls[0], fsConst.R_OK).then(() => true).catch(() => false)) {
     const data = await fs.readFile(urls[0], 'utf8')
-    urls = data.trim().split(/\s/)
+    urls = data.trim().split(/\s+/)
   }
 
   urls.forEach((url, index) => {
