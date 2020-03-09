@@ -168,8 +168,8 @@ export const websrcs = async (urls: string[] = [], options: WebscrsOption) => {
       if (ssBufA === undefined || ssBufB === undefined) {
         continue
       }
-      const filename = `${options.outputDir}/${i + 1}c-screenshot-diff.png`
-      const loader = ora(`${i + 1}.${chalk.cyan('Diff:')} ${filename}`).start()
+      const filename = `${options.outputDir}/${index}c-screenshot-diff.png`
+      const loader = ora(`${index}.${chalk.cyan('Diff:')} ${filename}`).start()
       const { width, height, bufA, bufB } = await fitDimension(ssBufA, ssBufB)
       const imgA = PNG.sync.read(bufA)
       const imgB = PNG.sync.read(bufB)
