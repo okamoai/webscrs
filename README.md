@@ -13,7 +13,7 @@ A CLI for website screenshots and comparisons.
 
 ## Requirements
 
-- node 10.12+
+- node 12.22+
 
 ## Installation
 ```sh-session

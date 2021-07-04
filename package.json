@@ -33,7 +33,7 @@
     "typescript": "^3.7.5"
   },
   "engines": {
-    "node": ">=10.12.0"
+    "node": ">=12.22.0"
   },
   "files": [
     "/bin",
