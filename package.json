@@ -7,20 +7,20 @@
   },
   "bugs": "https://github.com/okamoai/webscrs/issues",
   "dependencies": {
-    "@oclif/command": "^1.5.19",
-    "@oclif/config": "^1.14.0",
-    "@oclif/plugin-help": "^2.2.3",
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.2",
     "chalk": "^3.0.0",
     "ora": "^4.0.3",
     "pixelmatch": "^5.1.0",
     "pngjs": "^3.4.0",
     "puppeteer": "^2.0.0",
     "sharp": "^0.24.0",
-    "tslib": "^1.10.0"
+    "tslib": "^1.14.1"
   },
   "devDependencies": {
-    "@oclif/dev-cli": "^1.22.2",
-    "@types/node": "^10.17.14",
+    "@oclif/dev-cli": "^1.26.0",
+    "@types/node": "^10.17.60",
     "@types/pixelmatch": "^5.0.0",
     "@types/pngjs": "^3.4.0",
     "@types/puppeteer": "^2.0.0",
@@ -29,8 +29,8 @@
     "eslint-config-oclif": "^3.1.0",
     "eslint-config-oclif-typescript": "^0.1.0",
     "rimraf": "^3.0.2",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.10"
   },
   "engines": {
     "node": ">=12.22.0"
@@ -53,7 +53,7 @@
   "oclif": {
     "bin": "webscrs"
   },
-  "repository": "https://github.com/okamoai/webscrs.git",
+  "repository": "okamoai/webscrs",
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rimraf lib && tsc -b && oclif-dev readme",
