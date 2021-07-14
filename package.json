@@ -13,7 +13,7 @@
     "chalk": "^3.0.0",
     "ora": "^4.0.3",
     "pixelmatch": "^5.1.0",
-    "pngjs": "^3.4.0",
+    "pngjs": "^6.0.0",
     "puppeteer": "^2.0.0",
     "sharp": "^0.24.0",
     "tslib": "^1.14.1"
@@ -22,7 +22,7 @@
     "@oclif/dev-cli": "^1.26.0",
     "@types/node": "^10.17.60",
     "@types/pixelmatch": "^5.0.0",
-    "@types/pngjs": "^3.4.0",
+    "@types/pngjs": "^6.0.1",
     "@types/puppeteer": "^2.0.0",
     "@types/sharp": "^0.24.0",
     "eslint": "^5.16.0",
