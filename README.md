@@ -82,7 +82,7 @@ $ webscrs "url.txt"
 ```
 $ webscrs -d "iPhone 6" "https://example.com/"
 ```
-\* -d option is specified from [Puppeteer.device](https://github.com/puppeteer/puppeteer/blob/master/lib/DeviceDescriptors.js).
+\* -d option is specified from [Puppeteer.device](https://github.com/puppeteer/puppeteer/blob/main/src/common/DeviceDescriptors.ts).
 
 ## License
 
