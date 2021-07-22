@@ -47,7 +47,9 @@ const screenshot = async (browser: puppeteer.Browser, options: ScreenshotOption)
   const loaderOpen = ora(`${options.index}.${chalk.cyan('Open:')} ${options.target}`).start()
   const page = await browser.newPage()
   if (options.width || options.height) {
-    const { width: curW, height: curH } = page.viewport()
+    const viewPort = page.viewport()
+    const curW = viewPort?.width ?? 0
+    const curH = viewPort?.height ?? 0
     const width = options.width ? options.width : curW
     const height = options.height ? options.height : curH
     page.setViewport({ width, height })
@@ -81,7 +83,10 @@ const screenshot = async (browser: puppeteer.Browser, options: ScreenshotOption)
     return undefined
   })
   await page.close()
-  return buf
+  if (buf instanceof Buffer) {
+    return buf
+  }
+  return undefined
 }
 
 const fitDimension = async (originBufA: Buffer | undefined, originBufB: Buffer | undefined) => {

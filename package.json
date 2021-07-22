@@ -14,7 +14,7 @@
     "ora": "^4.0.3",
     "pixelmatch": "^5.2.1",
     "pngjs": "^6.0.0",
-    "puppeteer": "^2.0.0",
+    "puppeteer": "^10.1.0",
     "sharp": "^0.28.3",
     "tslib": "^1.14.1"
   },
@@ -23,7 +23,7 @@
     "@types/node": "^10.17.60",
     "@types/pixelmatch": "^5.2.4",
     "@types/pngjs": "^6.0.1",
-    "@types/puppeteer": "^2.0.0",
+    "@types/puppeteer": "^5.4.4",
     "@types/sharp": "^0.28.4",
     "eslint": "^5.16.0",
     "eslint-config-oclif": "^3.1.0",
