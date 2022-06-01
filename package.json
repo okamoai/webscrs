@@ -15,7 +15,7 @@
     "pixelmatch": "^5.2.1",
     "pngjs": "^6.0.0",
     "puppeteer": "^10.1.0",
-    "sharp": "^0.28.3",
+    "sharp": "^0.30.5",
     "tslib": "^1.14.1"
   },
   "devDependencies": {
