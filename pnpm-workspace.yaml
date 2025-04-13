@@ -1,0 +1,6 @@
+ignoredBuiltDependencies:
+  - yarn
+
+onlyBuiltDependencies:
+  - puppeteer
+  - sharp

@@ -1,9 +1,12 @@
 *-debug.log
 *-error.log
-/.nyc_output
+*.tsbuildinfo
+**/.DS_Store
+/.idea
 /dist
-/lib
 /tmp
-/yarn.lock
-node_modules
-screenshots
+/node_modules
+/.nyc_output
+/screenshots
+/coverage
+oclif.manifest.json

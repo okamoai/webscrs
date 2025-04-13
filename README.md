@@ -13,7 +13,7 @@ A CLI for website screenshots and comparisons.
 
 ## Requirements
 
-- node 12.22+
+- node 18+
 
 ## Installation
 ```sh-session
@@ -47,11 +47,12 @@ OPTIONS
 ```
 $ webscrs "https://example.com/" "https://example.net/"
 
-Take screenshots of URLs...
-√ 1.Open: https://example.com/
-=> √ Save: ./screenshots/1-example.com.png
-√ 2.Open: https://example.net/
-=> √ Save: ./screenshots/2-example.net.png
+Starting screenshot capture...
+✔ 1.Loading page: https://example.com/
+=> ✔ Capturing screenshot: ./screenshots/1-example.com.png
+✔ 2.Loading page: https://example.net/
+=> ✔ Capturing screenshot: ./screenshots/2-example.net.png
+✨️ All tasks completed successfully!
 ```
 
 ### Compare screenshots of URLs.
@@ -59,12 +60,13 @@ Take screenshots of URLs...
 ```
 $ webscrs -c "https://example.com/" "https://example.net/"
 
-Compare screenshots of URLs...
-√ 1.Open: https://example.com/
-=> √ Save: ./screenshots/1a-example.com.png
-√ 1.Open: https://example.net/
-=> √ Save: ./screenshots/1b-example.net.png
-√ 1.Diff: ./screenshots/1c-screenshot-diff.png
+Starting screenshot comparison...
+✔ 1.Loading page: https://example.com/
+=> ✔ Capturing screenshot: ./screenshots/1a-example.com.png
+✔ 1.Loading page: https://example.net/
+=> ✔ Capturing screenshot: ./screenshots/1b-example.net.png
+✔ 1.Generating diff: ./screenshots/1c-screenshot-diff.png - No differences found
+✨️ All tasks completed successfully!
 ```
 \* argments url must be even.
 
@@ -82,7 +84,7 @@ $ webscrs "url.txt"
 ```
 $ webscrs -d "iPhone 6" "https://example.com/"
 ```
-\* -d option is specified from [Puppeteer.device](https://github.com/puppeteer/puppeteer/blob/main/src/common/DeviceDescriptors.ts).
+\* -d option is specified from [Puppeteer known device](https://pptr.dev/api/puppeteer.knowndevices).
 
 ## License
 
