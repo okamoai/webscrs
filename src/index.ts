@@ -298,9 +298,9 @@ export default class Webscrs extends Command {
     .catch((error: Error) => {
       this.error(error.message, { exit: 1 })
     })
-    .finally(() => {
+    .finally(async () => {
       if (browser) {
-        browser.close()
+        await browser.close()
       }
     })
   }
