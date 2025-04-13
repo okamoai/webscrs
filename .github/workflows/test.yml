@@ -22,6 +22,18 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
           cache: pnpm
+      - uses: actions/cache@v4
+        id: puppeteer-cache
+        with:
+          path: |
+            ~/.cache/puppeteer
+            C:\Users\runneradmin\.cache\puppeteer
+          key: ${{ runner.os }}-puppeteer-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-puppeteer-
+
       - run: pnpm install
+      - if: steps.puppeteer-cache.outputs.cache-hit != 'true'
+        run: npx puppeteer browsers install chrome
       - run: pnpm run build
       - run: pnpm run test
